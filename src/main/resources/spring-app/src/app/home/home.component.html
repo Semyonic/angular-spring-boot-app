@@ -1,0 +1,25 @@
+<app-slider></app-slider>
+<div class="shopify-section">
+  <!-- <app-subscribe></app-subscribe> -->
+</div>
+<div class="shopify-section">
+  <section class="section-wrap  pb-0">
+    <div class="container">
+      <div class="row heading-row">
+        <div class="col-md-12 text-center">
+          <h2 class="heading uppercase">
+            <small>Products</small>
+          </h2>
+        </div>
+      </div>
+      <div class="row row-10">
+        <div class="col-md-3 col-xs-6 animated-from-left" *ngFor="let product of products">
+          <app-product [productData]="product"></app-product>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<app-options></app-options>
+<!-- Cookie notification bar -->
+<!--<app-cookies-notification></app-cookies-notification>-->

@@ -1,0 +1,418 @@
+<nav class="navbar navbar-static-top">
+  <div class="navigation">
+    <div class="container relative">
+
+      <div class="row">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Mobile cart -->
+          <div class="nav-cart mobile-cart hidden-lg hidden-md">
+            <div class="nav-cart-outer">
+              <div class="nav-cart-inner">
+                <a href="cart.html" class="nav-cart-icon">
+                  <span>0</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end navbar-header -->
+
+        <div class="header-wrap">
+          <div class="header-wrap-holder">
+
+            <!--<app-search></app-search>-->
+
+            <!-- Logo -->
+            <div class="">
+              <div class="logo-wrap text-center">
+
+                <a routerLink="">
+                  <h1>Spring Boot - Angular6 Example App</h1>
+                </a>
+
+              </div>
+            </div>
+
+            <!-- Cart -->
+            <div class="nav-cart-wrap hidden-sm hidden-xs">
+              <div class="nav-cart right">
+                <div class="nav-cart-outer right">
+                  <div class="nav-cart-inner">
+                    <a href="#" class="nav-cart-icon">
+                      <span id="CartCount">0</span>
+                    </a>
+                  </div>
+                </div>
+                <div id="dropdown-cart" class="nav-cart-container">
+                  <div class="no-items">
+                    <p>Your cart is currently empty.</p>
+                    <p class="text-continue">
+                      <a class="btn btn-md btn-color mt-10" href="javascript:void(0)">Continue Shopping</a>
+                    </p>
+                  </div>
+                  <div class="has-items">
+                    <div class="nav-cart-items">
+
+                    </div>
+                    <!-- end cart items -->
+                  </div>
+
+                  <div id="nav-cart-summary" class="nav-cart-summary">
+                    <span>Subtotal: </span>
+                    <span class="total-price" id="CartCost">
+                      <span class="money">$0.00</span>
+                    </span>
+                  </div>
+
+                  <div class="nav-cart-actions mt-20">
+                    <a href="cart.html" class="btn btn-md btn-dark">
+                      <span>View Cart</span>
+                    </a>
+                    <a href="cart.html" class="btn btn-md btn-color mt-10">
+                      <span>Proceed to Checkout</span>
+                    </a>
+                  </div>
+                </div>
+                <div id="menu-cart-amount" class="menu-cart-amount right">
+                  <span>
+                    Cart /
+                    <a href="cart.html">
+                      <span id="CartShowCost">
+                        <span class="money">$0.00</span>
+                      </span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <!-- end cart -->
+
+            </div>
+          </div>
+          <!-- end header wrap -->
+
+          <div class="nav-wrap">
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+
+              <ul class="nav navbar-nav">
+
+                <li id="mobile-search" class="hidden-lg hidden-md">
+                  <form action="search.html" method="get" class="input-group search-bar mobile-search relative" role="search">
+                    <input type="search" class="form-control input-group-field" placeholder="Search..." name="q" value="" aria-label="Search our store">
+                    <button type="submit" class="search-button btn icon-fallback-text">
+                      <i class="icon icon_search"></i>
+                    </button>
+                  </form>
+                </li>
+
+
+
+                <li class="dropdown active">
+                  <a href="index.html">Home</a>
+                </li>
+
+
+
+
+                <li class="dropdown ">
+                  <a href="#">Pages</a>
+                  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+
+
+
+                    <li>
+                      <a href="pages/about-us.html">About Us</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="pages/contact-us.html">Contact</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="account/login.html">Login</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="pages/f-a-q.html">F.A.Q</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="404.html">404</a>
+                    </li>
+
+
+                  </ul>
+                </li>
+
+
+
+
+                <li class="dropdown ">
+                  <a href="#">Category</a>
+                  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+
+
+
+                    <li class="li_megamenu">
+                      <div class="col-md-3 megamenu-item">
+                        <h6>For Man</h6>
+                        <ul class="menu-list">
+
+                          <li>
+                            <a href="collections/shirts.html">Shirts</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/jeans.html">Jeans</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/accessories.html">Accessories</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/shoes.html">Shoes</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </li>
+
+
+
+
+                    <li class="li_megamenu">
+                      <div class="col-md-3 megamenu-item">
+                        <h6>For Woman</h6>
+                        <ul class="menu-list">
+
+                          <li>
+                            <a href="collections/dresses.html">Dresses</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/coats.html">Coats</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/accessories.html">Accessories</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/sandals.html">Sandals</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </li>
+
+
+
+
+                    <li class="li_megamenu">
+                      <div class="col-md-3 megamenu-item">
+                        <h6>Accessories</h6>
+                        <ul class="menu-list">
+
+                          <li>
+                            <a href="collections/wallets.html">Wallets</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/watches.html">Watches</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/belts.html">Belts</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/scarfs.html">Scarfs</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </li>
+
+
+
+
+                    <li class="li_megamenu">
+                      <div class="col-md-3 megamenu-item">
+                        <h6>Bags</h6>
+                        <ul class="menu-list">
+
+                          <li>
+                            <a href="collections/leather.html">Leather</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/sports.html">Sports</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/street-style.html">Street Style</a>
+                          </li>
+
+                          <li>
+                            <a href="collections/creative.html">Creative</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </li>
+
+
+                  </ul>
+                </li>
+
+
+
+
+                <li class="dropdown ">
+                  <a href="#">Blog</a>
+                  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+
+
+
+                    <li>
+                      <a href="blogs/news.html">Standard</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="blogs/news/latest-summer-collection.html">Single Post</a>
+                    </li>
+
+
+                  </ul>
+                </li>
+
+
+
+
+                <li class="dropdown ">
+                  <a href="#">Shop</a>
+                  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+
+
+
+                    <li>
+                      <a href="collections/dresses.html">Catalog Page</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="collections.html">Collections Page</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="products/summer-dress.html">Single Product With Variants</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="products/long-black-dress.html">Single Product Out Of Stock</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="products/elegant-pink-dress.html">Single Product One Variant</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="cart.html">Cart</a>
+                    </li>
+
+
+                  </ul>
+                </li>
+
+
+
+
+                <li class="dropdown ">
+                  <a href="#">Elements</a>
+                  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+
+
+
+                    <li>
+                      <a href="pages/shortcodes.html">Shortcodes</a>
+                    </li>
+
+
+
+
+                    <li>
+                      <a href="pages/typography.html">Typography</a>
+                    </li>
+
+
+                  </ul>
+                </li>
+
+
+                <li class="mobile-links">
+                  <ul>
+                    <li>
+                      <a href="account/login.html">Login</a>
+                    </li>
+                    <li>
+                      <a href="account/login.html">My Account</a>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+              <!-- end menu -->
+            </div>
+            <!-- end collapse -->
+          </div>
+          <!-- end col -->
+
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end navigation -->
+  </div>
+</nav>

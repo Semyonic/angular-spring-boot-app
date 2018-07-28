@@ -1,0 +1,118 @@
+/**@import url("../node_modules/bootswatch/dist/cosmo/bootstrap.min.css");**/
+@import url("https://cdn.shopify.com/s/files/1/1820/4343/t/4/assets/style.scss.css?9933792675772675506");
+@import url("https://cdn.shopify.com/s/files/1/1820/4343/t/4/assets/plugins.css?9933792675772675506");
+
+#flexslider-hero .img-holder.img-1 {
+  background-image: url(https://www.advertisingphotography.in/wp-content/uploads/2016/09/Splash-Creative-Advertising-Photography-03.jpg);
+}
+
+@media only screen and (max-width: 240px) {
+
+  #flexslider-hero .img-holder.img-1 {
+    background-position: 26% center;
+  }
+
+}
+
+#flexslider-hero .img-holder.img-2 {
+  background-image: url(//cdn.shopify.com/s/files/1/1820/4343/files/2.jpg?v=1489199471);
+}
+
+@media only screen and (max-width: 480px) {
+
+  #flexslider-hero .img-holder.img-2 {
+    background-position: center;
+  }
+
+}
+
+#flexslider-hero .img-holder.img-3 {
+  background-image: url(//cdn.shopify.com/s/files/1/1820/4343/files/3.jpg?v=1489474265);
+}
+
+@media only screen and (max-width: 480px) {
+
+  #flexslider-hero .img-holder.img-3 {
+    background-position: 76% center;
+  }
+
+}
+
+#flexslider-hero .img-holder.img-4 {
+  background-image: url(//cdn.shopify.com/s/files/1/1820/4343/files/4.jpg?v=1489474301);
+}
+
+@media only screen and (max-width: 480px) {
+
+  #flexslider-hero .img-holder.img-4 {
+    background-position: 26% center;
+  }
+
+}
+
+.shopify-payment-button__button--hidden {
+  visibility: hidden;
+}
+
+.shopify-payment-button__button {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 0 transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  transition: background 0.2s ease-in-out;
+}
+
+.shopify-payment-button__button[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--unbranded {
+  background-color: #1990c6;
+  padding: 1em 2em;
+}
+
+.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: #136f99;
+}
+
+.shopify-payment-button__more-options {
+  background: transparent;
+  border: 0 none;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.shopify-payment-button__more-options:hover:not([disabled]) {
+  text-decoration: underline;
+}
+
+.shopify-payment-button__more-options[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--branded {
+  display: flex;
+  flex-direction: column;
+  min-height: 44px;
+  position: relative;
+  z-index: 1;
+}
+
+.shopify-payment-button__button--branded .shopify-cleanslate {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
