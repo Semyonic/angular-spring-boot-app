@@ -9,8 +9,7 @@ import {ProductService} from "../components/services/product/product.service";
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private service: ProductService) {
-  }
+  constructor(private service: ProductService) {  }
 
   public products: Product;
 
