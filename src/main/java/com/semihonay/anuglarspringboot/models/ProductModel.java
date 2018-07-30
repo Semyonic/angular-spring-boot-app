@@ -7,7 +7,6 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
 
 /**
  * The type Product model.
@@ -27,34 +26,48 @@ public class ProductModel {
     @Getter
     @Setter
     @NotNull
+    @Column(length = 350)
     private String barCode;
 
     @Getter
     @Setter
+    @NotNull
+    @Column(length = 350)
     private String productCode;
 
     @Getter
     @Setter
     @NotNull
-    @Column(length = 50)
+    @Column(length = 350)
     private String name;
 
     @Getter
     @Setter
-    @Column(length = 50)
+    @NotNull
+    @Column(length = 350)
     private String brand;
 
     @Getter
     @Setter
+    @NotNull
+    @Column(length = 350)
     private String description;
 
     @Getter
     @Setter
-    @Column(length = 25)
-    private BigDecimal price;
+    @NotNull
+    @Column(length = 350)
+    private String productImg;
 
     @Getter
     @Setter
+    @NotNull
+    @Column(length = 350)
+    private String price;
+
+    @Getter
+    @Setter
+    @NotNull
     @OneToOne(targetEntity = CategoryModel.class)
     private CategoryModel category;
 }
